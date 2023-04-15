@@ -1,8 +1,9 @@
 @charset "UTF-8";
 
 :root {
-    --color1: #5DFF52;
+    --color1: #3c7537;
     --color2: #8b1e60;
+    --color3: #3bf12e;
 }
 
 * {
@@ -13,7 +14,7 @@
 }
 
 body, html {
-    background-color: var(--color2);
+    background-color: #8b1e60;
     height: 100vh;
     width: 100vw;
 }
@@ -32,7 +33,7 @@ section#login {
     overflow: hidden;
     width: 350px;
     background-color: white;
-    height: 500px;
+    height: 515px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.432);
 
@@ -41,7 +42,7 @@ section#login {
 }
 
 section#login > div#imagem {                                        
-    background: var(--color2) url(../imagens/predio.jpg) no-repeat;
+    background: #8b1e60 url(../imagens/predio.jpg) no-repeat;
     background-size: cover;
     height: 200px;
     background-position: left bottom;
@@ -61,4 +62,57 @@ div#form > h1 {
 
 div#form > p {
     font-size: 0.8em;
+}
+
+form > div.campo {
+    background-color: #8b1e60;
+    width: 100%;
+    display: block;
+    height: 40px;
+    border-radius: 5px;
+    margin: 5px 0px;
+}
+
+form label {
+    display: none;
+}
+
+form > input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: #183116;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+
+}
+
+form > input[type=submit]:hover {
+    background-color: #296425;
+}
+
+form > a.botao {
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    font-size: 1em;
+    background-color: white;
+    color: #32c927;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 1px solid #2f662b;
+    padding-top: 5px;
+    margin-top: 5px;
+}
+
+form > a.botao > span {
+    font-size: 0.8em;
+}
+
+form > a.botao:hover {
+    background-color: #3e8839;
 }
